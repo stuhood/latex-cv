@@ -1,0 +1,7 @@
+*.aux
+*.log
+*.out
+*.pdf
+*.swp
+target
+project/boot
