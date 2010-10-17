@@ -1,0 +1,157 @@
+% LaTeX Curriculum Vitae Template
+%
+% Copyright (C) 2004-2009 Jason Blevins <jrblevin@sdf.lonestar.org>
+% http://jblevins.org/projects/cv-template/
+%
+% You may use use this document as a template to create your own CV
+% and you may redistribute the source code freely. No attribution is
+% required in any resulting documents. I do ask that you please leave
+% this notice and the above URL in the source code if you choose to
+% redistribute this file.
+
+\documentclass[letterpaper]{article}
+
+\usepackage{hyperref}
+\usepackage{geometry}
+
+% Comment the following lines to use the default Computer Modern font
+% instead of the Palatino font provided by the mathpazo package.
+% Remove the 'osf' bit if you don't like the old style figures.
+\usepackage[T1]{fontenc}
+\usepackage[sc,osf]{mathpazo}
+
+% Set your name here
+\def\name{Stu Hood}
+
+% Replace this with a link to your CV if you like, or set it empty
+% (as in \def\footerlink{}) to remove the link in the footer:
+\def\footerlink{http://hoodidge.net/}
+
+% The following metadata will show up in the PDF properties
+\hypersetup{
+  colorlinks = true,
+  urlcolor = black,
+  pdfauthor = {\name},
+  pdfkeywords = {economics, statistics, mathematics},
+  pdftitle = {\name: Curriculum Vitae},
+  pdfsubject = {Curriculum Vitae},
+  pdfpagemode = UseNone
+}
+
+\geometry{
+  body={6.5in, 8.5in},
+  left=1.0in,
+  top=1.25in
+}
+
+% Customize page headers
+\pagestyle{myheadings}
+\markright{\name}
+\thispagestyle{empty}
+
+% Custom section fonts
+\usepackage{sectsty}
+\sectionfont{\rmfamily\mdseries\Large}
+\subsectionfont{\rmfamily\mdseries\itshape\large}
+
+% Other possible font commands include:
+% \ttfamily for teletype,
+% \sffamily for sans serif,
+% \bfseries for bold,
+% \scshape for small caps,
+% \normalsize, \large, \Large, \LARGE sizes.
+
+% Don't indent paragraphs.
+\setlength\parindent{0em}
+
+% Make lists without bullets
+\renewenvironment{itemize}{
+  \begin{list}{}{
+    \setlength{\leftmargin}{1.5em}
+  }
+}{
+  \end{list}
+}
+
+\begin{document}
+
+% Place name at left
+{\huge \name}
+
+% Alternatively, print name centered and bold:
+%\centerline{\huge \bf \name}
+
+\vspace{0.25in}
+
+\begin{minipage}{0.45\linewidth}
+  301 East 4th Street \#311 \\
+  Austin, TX 78701
+\end{minipage}
+\begin{minipage}{0.45\linewidth}
+  \begin{tabular}{ll}
+    Phone: & (203) 216-5658 \\
+    Email: & \href{mailto:stuhood@gmail.com}{\tt stuhood@gmail.com} \\
+    Homepage: & \href{http://www.github.com/stuhood/}{\tt github.com/stuhood} \\
+  \end{tabular}
+\end{minipage}
+
+
+\section*{Personal}
+
+\begin{itemize}
+  \item Born on November 16, 1985.
+  \item United States Citizen.
+\end{itemize}
+
+
+\section*{Education}
+
+\begin{itemize}
+  \item B.S. Virginia Polytechnic Institute and State University, 2008.
+\end{itemize}
+
+
+\section*{Employment}
+
+\begin{itemize}
+  \item Rackspace Hosting - 2006--2010.
+  \item US Coast Guard - Summer 2006.
+  \item Stuart Design, LLC - 2000--2004.
+\end{itemize}
+
+
+\section*{Contributions}
+
+\subsection*{Case Studies}
+
+\begin{itemize}
+  \item Log Processing at Rackspace, 2009, {\it Hadoop: The Definitive Guide}, 531--539.
+\end{itemize}
+
+\subsection*{Projects}
+
+\begin{itemize}
+  \item Apache Cassandra, 2009--.
+  \item Noteworthy Webmail Search, 2008--2009.
+  \item Rackspace Log Search, 2007--2008.
+\end{itemize}
+
+\subsection*{Appearances}
+
+\begin{itemize}
+  \item \href{http://www.rackspacecloud.com/blog/2010/06/23/compare-nosql-options-by-watching-the-%E2%80%9Cnon-relational-database-smackdown%E2%80%9D/}{\it Non-Relational Database Smackdown}, SXSW 2010.
+  \item \href{http://www.austinjug.org/index.jsp?p=archive-20100126}{\it The Cassandra Distributed Database}, Austin JUG 2010.
+  \item \href{http://thestrangeloop.com/blog/09/09/30/speaker-focus-stu-hood-cassandra}{\it Apache Cassandra: Pragmatic Consistency for Massive Scale}, Strange Loop 2009.
+\end{itemize}
+
+\bigskip
+
+% Footer
+\begin{center}
+  \begin{footnotesize}
+    Last updated: \today \\
+    \href{\footerlink}{\texttt{\footerlink}}
+  \end{footnotesize}
+\end{center}
+
+\end{document}
